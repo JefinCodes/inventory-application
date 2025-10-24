@@ -4,6 +4,7 @@ const path = require("node:path");
 const gameRouter = require("./routes/gameRouter");
 const developerRouter = require("./routes/developersRouter");
 const { display404Page } = require("./controllers/routeNotFoundController");
+require("dotenv").config();
 
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");

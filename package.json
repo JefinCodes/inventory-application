@@ -18,6 +18,7 @@
   "homepage": "https://github.com/JefinCodes/inventory-application#readme",
   "description": "",
   "dependencies": {
+    "dotenv": "^17.2.3",
     "express": "^5.1.0"
   }
 }
