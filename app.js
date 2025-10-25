@@ -1,10 +1,10 @@
 const express = require("express");
 const app = express();
 const path = require("node:path");
+require("dotenv").config();
 const gameRouter = require("./routes/gameRouter");
 const developerRouter = require("./routes/developerRouter");
 const { display404Page } = require("./controllers/routeNotFoundController");
-require("dotenv").config();
 
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
